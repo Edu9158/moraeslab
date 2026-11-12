@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" width="240" height="280" fill="none">
+  <defs>
+    <!-- Clip path matching the exact interior silhouette of the Erlenmeyer flask -->
+    <clipPath id="flask-interior">
+      <path d="M98 86 H142 V126 L184 198 C191 210 183 226 168 226 H72 C57 226 49 210 56 198 L98 126 Z" />
+    </clipPath>
+
+    <!-- Soft ambient glow for the pink core -->
+    <radialGradient id="core-ambient-glow" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#FF3EA5" stop-opacity="0.45" />
+      <stop offset="65%" stop-color="#FF3EA5" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#FF3EA5" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Vibrant pink gradient for the liquid core -->
+    <linearGradient id="core-liquid-grad" x1="120" y1="145" x2="120" y2="205" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF74BE" />
+      <stop offset="45%" stop-color="#FF3EA5" />
+      <stop offset="100%" stop-color="#D91E85" />
+    </linearGradient>
+
+    <!-- Smoke gradient -->
+    <linearGradient id="smoke-grad" x1="120" y1="12" x2="120" y2="74" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF8AC8" stop-opacity="0.85" />
+      <stop offset="55%" stop-color="#FF3EA5" />
+      <stop offset="100%" stop-color="#D91E85" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Floating Smoke Wisp above the flask -->
+  <g id="smoke">
+    <path d="M120 73 C124 63 114 55 111 45 C107 33 118 24 123 14 C121 25 129 31 131 41 C134 52 124 62 120 73 Z" fill="url(#smoke-grad)" />
+    <path d="M117 68 C110 60 106 51 108 41 C110 32 117 26 121 18 C116 28 113 36 115 45 C117 53 121 60 117 68 Z" fill="#FF3EA5" opacity="0.55" />
+    <path d="M122 69 C128 61 133 52 131 43 C129 35 124 30 122 23 C126 32 127 40 125 48 C123 56 120 62 122 69 Z" fill="#FF74BE" opacity="0.5" />
+  </g>
+
+  <!-- Main Flask Body & Rim -->
+  <g id="flask">
+    <!-- Outer Rim -->
+    <rect x="90" y="76" width="60" height="12" rx="6" fill="#214435" />
+    <!-- Subtle inner highlight under rim -->
+    <rect x="98" y="88" width="44" height="3" fill="#173126" />
+
+    <!-- Main Flask Silhouette -->
+    <path d="M98 86 H142 V126 L184 198 C191 210 183 226 168 226 H72 C57 226 49 210 56 198 L98 126 Z" fill="#214435" />
+
+    <!-- Clipped Interior Details (Subtle Depth + PCB Circuit Traces) -->
+    <g clip-path="url(#flask-interior)">
+      <!-- Subtle vertical glass depth shading -->
+      <rect x="115" y="86" width="10" height="140" fill="#2B5744" opacity="0.55" />
+      <path d="M98 86 H105 V126 L66 198 C61 207 65 218 74 220 H66 C54 220 49 208 55 197 L98 126 Z" fill="#2E5D49" opacity="0.4" />
+
+      <!-- Circuit Board Traces & Nodes (#2E5D49) -->
+      <g stroke="#2E5D49" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <!-- Neck Traces -->
+        <path d="M112 86 V106 L106 112 V122" />
+        <circle cx="106" cy="124" r="2.5" fill="#214435" />
+
+        <path d="M120 86 V101" />
+        <circle cx="120" cy="104" r="2.5" fill="#214435" />
+
+        <path d="M132 86 V104 L125 111 V134" />
+        <circle cx="132" cy="117" r="2.5" fill="#214435" />
+        <path d="M132 120 V138" />
+
+        <!-- Left Chamber Traces -->
+        <path d="M89 144 L73 172 L84 182 V198 H64" />
+        <circle cx="77" cy="176" r="2.5" fill="#214435" />
+        <path d="M77 179 V191 H67" />
+
+        <path d="M62 212 H96 L104 204 V226" />
+        <circle cx="111" cy="204" r="2.5" fill="#214435" />
+        <path d="M111 207 V226" />
+
+        <!-- Right Chamber Traces -->
+        <path d="M151 144 L167 172 L156 182 V198 H176" />
+        <circle cx="163" cy="176" r="2.5" fill="#214435" />
+        <path d="M163 179 V191 H173" />
+
+        <path d="M178 212 H144 L136 204 V226" />
+        <circle cx="138" cy="215" r="2.5" fill="#214435" />
+        <path d="M128 196 V226" />
+      </g>
+    </g>
+
+    <!-- Inner Bevel Border -->
+    <path d="M102 90 H138 V127 L179 197 C184 206 178 220 166 220 H74 C62 220 56 206 61 197 L102 127 Z" stroke="#2B5744" stroke-width="2" opacity="0.6" />
+  </g>
+
+  <!-- Glowing Pink Knowledge Core & Code Brackets { } -->
+  <g id="knowledge-core">
+    <!-- Soft radial glow -->
+    <circle cx="120" cy="178" r="34" fill="url(#core-ambient-glow)" />
+
+    <!-- Left Curly Bracket { -->
+    <path d="M101 163 C96 163 95 166 95 170 V174 C95 177 93 179 90 179 C93 179 95 181 95 184 V188 C95 192 96 195 101 195" stroke="#FF3EA5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Right Curly Bracket } -->
+    <path d="M139 163 C144 163 145 166 145 170 V174 C145 177 147 179 150 179 C147 179 145 181 145 184 V188 C145 192 144 195 139 195" stroke="#FF3EA5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Liquid Flame / Energy Drop -->
+    <path d="M123 153 C124 159 124 164 127 167 C131 171 133 175 133 181 C133 189 127 195 120 195 C113 195 107 189 107 181 C107 175 110 171 113 167 C115 164 115 160 115 157 C117 159 118 161 119 163 C120 159 121 156 123 153 Z" fill="url(#core-liquid-grad)" />
+
+    <!-- Inner Bright Specular Core -->
+    <ellipse cx="120" cy="182" rx="7.5" ry="8.5" fill="#FF7EC4" opacity="0.7" />
+
+    <!-- Rising Energy Bubbles -->
+    <circle cx="114" cy="147" r="3" fill="#FF3EA5" />
+    <circle cx="125" cy="141" r="2.2" fill="#FF3EA5" />
+    <circle cx="120" cy="131" r="2.6" fill="#FF3EA5" />
+  </g>
+</svg>
