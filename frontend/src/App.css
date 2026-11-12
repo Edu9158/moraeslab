@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 :root {
   --background: #F4EAD5; /* 60% - Cream */
   --background-hover: #aca495;
@@ -7,7 +9,7 @@
 
 body {
   font-family: sans-serif;
-  background-color: var(--background);
+  background-color: var(--primary);
 }
 
 /* Navigation Bar */
@@ -29,7 +31,7 @@ body {
   font-weight: 700;
   color: var(--primary);
 
-  font-family: "Caveat", cursive;
+  font-family: 'Courgette', cursive;
 }
 
 .nav-links {
@@ -38,6 +40,7 @@ body {
   display: flex;
   gap: 2rem;
   align-items: center;
+  font-size: 1.1rem;
 
   list-style: none;
 }
@@ -60,22 +63,31 @@ body {
 /* Hero Section */
 
 .hero {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  background-color: var(--background);
 
-  padding: 8rem 2rem;
+  min-height: 75vh;
+  padding: 4rem 2rem;
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+
   color: var(--primary);
+  font-family: 'Courgette', cursive;
 }
 
 .hero p {
-  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
 
-  margin: 1rem auto;
-
-  color: #444;
+  margin-bottom: 2rem;
 }
 
 .hero button {
@@ -87,4 +99,69 @@ body {
 
   border-radius: 8px;
   cursor: pointer;
+}
+
+.hero-content {
+  max-width: 550px;
+  text-align: center;
+}
+
+.hero-img img {
+  width: 500px;
+  height: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+
+  border: none;
+
+  padding: .9rem 2rem;
+  border-radius: 999px;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .25s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  opacity: .9;
+}
+
+.btn-secondary {
+  background: transparent;
+
+  color: var(--primary);
+
+  border: 2px solid var(--primary);
+
+  padding: .9rem 2rem;
+  border-radius: 999px;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .25s;
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.about {
+  background-color: var(--primary);
 }

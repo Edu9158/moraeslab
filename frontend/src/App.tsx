@@ -1,5 +1,6 @@
 import { FaGithub } from 'react-icons/fa';
-import './App.css'
+import logo from './assets/logo.svg';
+import './App.css';
 
 function App() {
   return (
@@ -20,28 +21,44 @@ function App() {
         </ul>
 
         <div className="navbar-action">
-          <FaGithub size={24}  aria-label="GitHub Repository"/>
+          <FaGithub size={26}  aria-label="GitHub Repository"/>
         </div>
 
       </nav>
 
       <section className="hero">
-        
-        <h1>MoraesLab</h1>
 
-        <p>
-          A personal lab for learning, building and 
-          experimenting with software development.
-        </p>
+        <div className="hero-content">
 
-        <button>
-          Lab
-        </button>
+          <h1>MoraesLab</h1>
 
-        <button>
-          Contact
-        </button>
+          <p>
+            A personal lab for learning, building and
+            experimenting with software development.
+          </p>
 
+          <div className="hero-buttons">
+
+            <button className="btn-primary">
+              Lab
+            </button>
+
+            <button className="btn-secondary">
+              Contact
+            </button>
+
+          </div>
+
+        </div>
+
+        <div className="hero-img">
+          <img src={logo} alt="MoraesLab Logo" />
+        </div>
+
+      </section>
+
+      <section className="about">
+        <p></p>
       </section>
 
     </>
