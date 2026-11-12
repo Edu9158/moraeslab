@@ -1,0 +1,90 @@
+:root {
+  --background: #F4EAD5; /* 60% - Cream */
+  --background-hover: #aca495;
+  --primary:    #214435; /* 30% - Green */
+  --accent:     #FF3EA5; /* 10% - Pink */
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--background);
+}
+
+/* Navigation Bar */
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  
+
+  padding: 1rem 2rem;
+
+  background-color: var(--background);
+}
+
+.logo {
+  justify-self: start;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+
+  font-family: "Caveat", cursive;
+}
+
+.nav-links {
+  justify-self: center;
+
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--background-hover);
+}
+
+.navbar-action {
+  justify-self: end;
+  color: var(--primary);
+}
+
+/* Hero Section */
+
+.hero {
+  text-align: center;
+
+  padding: 8rem 2rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: var(--primary);
+}
+
+.hero p {
+  max-width: 600px;
+
+  margin: 1rem auto;
+
+  color: #444;
+}
+
+.hero button {
+  margin-top: 2rem;
+
+  padding: 0.8rem 1.5rem;
+
+  border: none;
+
+  border-radius: 8px;
+  cursor: pointer;
+}
