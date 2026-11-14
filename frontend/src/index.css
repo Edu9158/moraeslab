@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+  --background: #F4EAD5; /* 60% - Cream */
+  --background-hover: #aca495;
+  --primary:    #214435; /* 30% - Green */
+  --accent:     #FF3EA5; /* 10% - Pink */
+
+  --page-gutter: max(2rem, calc((100% - 1200px) / 2));
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--primary);
+  margin: 0;
+}

@@ -30,11 +30,16 @@ function App() {
 
         <div className="hero-content">
 
-          <h1>MoraesLab</h1>
+          <p className="hero-eyebrow">
+            PHYSICS · SOFTWARE · EXPERIMENTS
+          </p>
 
-          <p>
-            A personal lab for learning, building and
-            experimenting with software development.
+          <h1 className="hero-title">
+            From physics to <span className="highlight">code</span>.
+          </h1>
+
+          <p className="hero-subtitle">
+            A personal lab for learning, building and experimenting with software development.
           </p>
 
           <div className="hero-buttons">
