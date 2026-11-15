@@ -1,71 +1,17 @@
-import { FaGithub } from 'react-icons/fa';
-import logo from './assets/logo.svg';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
 import './App.css';
 
 function App() {
   return (
-    
     <>
+      <Navbar />
 
-      <nav className="navbar">
-        
-        <div className="logo">
-          MoraesLab
-        </div>
-
-        <ul className="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Lab</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-
-        <div className="navbar-action">
-          <FaGithub size={26}  aria-label="GitHub Repository"/>
-        </div>
-
-      </nav>
-
-      <section className="hero">
-
-        <div className="hero-content">
-
-          <p className="hero-eyebrow">
-            PHYSICS · SOFTWARE · EXPERIMENTS
-          </p>
-
-          <h1 className="hero-title">
-            From physics to <span className="highlight">code.</span>
-          </h1>
-
-          <p className="hero-subtitle">
-            A personal lab for learning, building and experimenting with software development.
-          </p>
-
-          <div className="hero-buttons">
-
-            <a href = "#lab" className="btn-primary">
-              Lab
-            </a>
-
-            <a href="#contact" className="btn-secondary">
-              Contact
-            </a>
-
-          </div>
-
-        </div>
-
-        <div className="hero-img">
-          <img src={logo} alt="MoraesLab Logo" />
-        </div>
-
-      </section>
+      <Hero />
 
       <section className="about">
         <p></p>
       </section>
-
     </>
   );
 }
