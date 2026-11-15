@@ -52,55 +52,6 @@
   gap: 1rem;
 }
 
-.btn-primary {
-  background: var(--accent);
-  color: white;
-
-  border: none;
-
-  padding: 0.9rem 2rem;
-  border-radius: 999px;
-
-  font-size: 1rem;
-  font-weight: 600;
-  display: inline-block;
-  text-decoration: none;
-
-  cursor: pointer;
-
-  transition: 0.25s;
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
-}
-
-.btn-secondary {
-  background: transparent;
-
-  color: var(--primary);
-
-  border: 2px solid var(--primary);
-
-  padding: 0.9rem 2rem;
-  border-radius: 999px;
-
-  font-size: 1rem;
-  font-weight: 600;
-  display: inline-block;
-  text-decoration: none;
-
-  cursor: pointer;
-
-  transition: 0.25s;
-}
-
-.btn-secondary:hover {
-  background: var(--primary);
-  color: white;
-}
-
 .highlight {
   color: var(--accent);
   font-family: var(--font-accent);

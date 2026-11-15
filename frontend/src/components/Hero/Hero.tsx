@@ -1,5 +1,6 @@
 import logo from '../../assets/logo.svg';
 import './Hero.css';
+import Button from '../Button/Button';
 
 function Hero() {
   return (
@@ -17,13 +18,13 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <a href="#lab" className="btn-primary">
+          <Button href="#lab" variant="primary">
             Lab
-          </a>
+          </Button>
 
-          <a href="#contact" className="btn-secondary">
+          <Button href="#contact" variant="secondary">
             Contact
-          </a>
+          </Button>
         </div>
       </div>
 
