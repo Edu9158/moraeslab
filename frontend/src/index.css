@@ -3,11 +3,11 @@
 /* ---------- Root Variables ---------- */
 
 :root {
-  --background: #F4EAD5; /* 60% - Cream */
+  --background: #f4ead5; /* 60% - Cream */
   --background-hover: #aca495;
-  --primary:    #214435; /* 30% - Green */
+  --primary: #214435; /* 30% - Green */
   --primary-hover: #1a362e;
-  --accent:     #FF3EA5; /* 10% - Pink */
+  --accent: #ff3ea5; /* 10% - Pink */
 
   --page-gutter: max(2rem, calc((100% - 1200px) / 2));
 
@@ -24,12 +24,18 @@
   box-sizing: border-box;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font: inherit;
 }
 
-h1, h2, h3, p {
-    margin: 0;
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 /* ---------- Body Styles ---------- */
