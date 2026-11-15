@@ -1,13 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap');
+
+/* ---------- Root Variables ---------- */
 
 :root {
   --background: #F4EAD5; /* 60% - Cream */
   --background-hover: #aca495;
   --primary:    #214435; /* 30% - Green */
+  --primary-hover: #1a362e;
   --accent:     #FF3EA5; /* 10% - Pink */
 
   --page-gutter: max(2rem, calc((100% - 1200px) / 2));
+
+  --font-body: 'Inter', sans-serif;
+  --font-display: 'Fraunces', serif;
+  --font-accent: 'Courgette', cursive;
 }
+
+/* ---------- Base Styles Reset ---------- */
 
 *,
 *::before,
@@ -15,8 +24,18 @@
   box-sizing: border-box;
 }
 
+button, input, select, textarea {
+  font: inherit;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+/* ---------- Body Styles ---------- */
+
 body {
-  font-family: sans-serif;
+  font-family: var(--font-body);
   background-color: var(--primary);
   margin: 0;
 }

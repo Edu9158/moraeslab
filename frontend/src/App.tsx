@@ -35,7 +35,7 @@ function App() {
           </p>
 
           <h1 className="hero-title">
-            From physics to <span className="highlight">code</span>.
+            From physics to <span className="highlight">code.</span>
           </h1>
 
           <p className="hero-subtitle">
@@ -44,13 +44,13 @@ function App() {
 
           <div className="hero-buttons">
 
-            <button className="btn-primary">
+            <a href = "#lab" className="btn-primary">
               Lab
-            </button>
+            </a>
 
-            <button className="btn-secondary">
+            <a href="#contact" className="btn-secondary">
               Contact
-            </button>
+            </a>
 
           </div>
 

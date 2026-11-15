@@ -10,16 +10,6 @@
   background-color: var(--background);
 }
 
-.logo {
-  justify-self: start;
-
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary);
-
-  font-family: 'Courgette', cursive;
-}
-
 .nav-links {
   justify-self: center;
 
@@ -40,7 +30,7 @@
 }
 
 .nav-links a:hover {
-  color: var(--background-hover);
+  color: var(--primary-hover);
 }
 
 .navbar-action {
@@ -49,6 +39,16 @@
 }
 
 /* Hero Section */
+
+.logo {
+  justify-self: start;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+
+  font-family: var(--font-accent);
+}
 
 .hero {
   display: grid;
@@ -67,19 +67,28 @@
   text-align: left;
 }
 
+.hero-eyebrow {
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  margin-bottom: 1.1rem;
+
+  color: var(--primary);
+}
+
 .hero-title {
   font-size: 5rem;
-  line-height: 1;
+  line-height: 1.1;
   margin-bottom: 1.5rem;
 
   color: var(--primary);
-  font-family: 'Courgette', cursive;
+  font-family: var(--font-display);
 }
 
 .hero-subtitle {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #555;
+  color: color-mix(in srgb, var(--primary) 90%, transparent);
 
   margin-bottom: 2rem;
 }
@@ -93,7 +102,6 @@
 .hero-buttons {
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
 }
 
 .btn-primary {
@@ -107,6 +115,8 @@
 
   font-size: 1rem;
   font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
 
   cursor: pointer;
 
@@ -130,6 +140,8 @@
 
   font-size: 1rem;
   font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
 
   cursor: pointer;
 
@@ -139,6 +151,25 @@
 .btn-secondary:hover {
   background: var(--primary);
   color: white;
+}
+
+.highlight {
+  color: var(--accent);
+  font-family: var(--font-accent);
+
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: -3%;
+  bottom: -0.28em;
+  width: 98%;
+  height: 0.45em;
+  background-color: var(--accent);
+  mask: url('./assets/underline.svg') no-repeat;
 }
 
 .about {
