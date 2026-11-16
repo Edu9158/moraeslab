@@ -10,29 +10,29 @@
 
   <!-- Distant stars (small dots) -->
   <g fill="#F4EAD5">
-    <circle cx="120" cy="95"  r="2.5" opacity=".7"/>
-    <circle cx="270" cy="70"  r="2"   opacity=".6"/>
-    <circle cx="340" cy="210" r="3"   opacity=".8"/>
-    <circle cx="60"  cy="250" r="2"   opacity=".6"/>
-    <circle cx="355" cy="420" r="2.5" opacity=".7"/>
-    <circle cx="45"  cy="440" r="3"   opacity=".8"/>
-    <circle cx="150" cy="460" r="2"   opacity=".5"/>
-    <circle cx="300" cy="465" r="2"   opacity=".6"/>
-    <circle cx="245" cy="120" r="2"   opacity=".5"/>
-    <circle cx="95"  cy="330" r="2"   opacity=".5"/>
+    <circle cx="120" cy="95"  r="2.5"/>
+    <circle cx="270" cy="70"  r="2"/>
+    <circle cx="340" cy="210" r="3"/>
+    <circle cx="60"  cy="250" r="2"/>
+    <circle cx="355" cy="420" r="2.5"/>
+    <circle cx="45"  cy="440" r="3"/>
+    <circle cx="150" cy="460" r="2"/>
+    <circle cx="300" cy="465" r="2"/>
+    <circle cx="245" cy="120" r="2"/>
+    <circle cx="95"  cy="330" r="2"/>
   </g>
 
   <!-- Sparkle stars -->
   <use href="#spark" transform="translate(84 150) scale(.8)"   fill="#F4EAD5"/>
   <use href="#spark" transform="translate(352 245) scale(.5)"  fill="#F4EAD5"/>
-  <use href="#spark" transform="translate(95 440) scale(.45)"  fill="#F4EAD5" opacity=".8"/>
-  <use href="#spark" transform="translate(150 60) scale(.4)"   fill="#F4EAD5" opacity=".7"/>
-  <use href="#spark" transform="translate(345 430) scale(.6)"  fill="#FF3EA5"/>
-  <use href="#spark" transform="translate(310 110)"            fill="#FF3EA5"/>
+  <use href="#spark" transform="translate(95 440) scale(.45)"  fill="#F4EAD5"/>
+  <use href="#spark" transform="translate(150 60) scale(.4)"   fill="#F4EAD5"/>
+  <use href="#spark" transform="translate(345 430) scale(.6)"  fill="#F4EAD5"/>
+  <use href="#spark" transform="translate(310 110)"            fill="#F4EAD5"/>
 
   <!-- Orbital ring: back half (faded, hidden behind the flask) -->
   <ellipse cx="200" cy="330" rx="160" ry="38" transform="rotate(-14 200 330)"
-           fill="none" stroke="#F4EAD5" stroke-width="8" opacity=".55"/>
+           fill="none" stroke="#FF3EA5" stroke-width="8" opacity=".55"/>
 
   <!-- Flask (filled with background color to hide the ring behind it) -->
   <use href="#flask" fill="#214435" stroke="#F4EAD5" stroke-width="14"
@@ -41,13 +41,13 @@
 
   <!-- Stars inside the flask -->
   <use href="#spark" transform="translate(200 335) scale(.55)" fill="#F4EAD5"/>
-  <use href="#spark" transform="translate(165 365) scale(.3)"  fill="#F4EAD5" opacity=".8"/>
-  <circle cx="238" cy="365" r="3" fill="#F4EAD5" opacity=".8"/>
-  <circle cx="200" cy="280" r="2.5" fill="#F4EAD5" opacity=".7"/>
+  <use href="#spark" transform="translate(165 365) scale(.3)"  fill="#F4EAD5"/>
+  <circle cx="238" cy="365" r="3" fill="#F4EAD5"/>
+  <circle cx="200" cy="280" r="2.5" fill="#F4EAD5"/>
 
   <!-- Orbital ring: front half -->
   <path d="M40,330 A160,38 0 0 0 360,330" transform="rotate(-14 200 330)"
-        fill="none" stroke="#F4EAD5" stroke-width="8"/>
+        fill="none" stroke="#FF3EA5" stroke-width="8"/>
 
   <!-- Smoke -->
   <path d="M200,140 C176,120 224,102 200,82 C182,66 212,52 198,36"
