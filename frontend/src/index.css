@@ -9,8 +9,7 @@
   --primary-hover: #1a362e;
   --accent: #ff3ea5; /* 10% - Pink */
 
-  --page-gutter: max(2rem, calc((100% - 1200px) / 2));
-
+  --page-gutter: max(clamp(2rem, 5vw, 4rem), calc((100% - 1200px) / 2));
   --font-body: 'Inter', sans-serif;
   --font-display: 'Fraunces', serif;
   --font-accent: 'Courgette', cursive;

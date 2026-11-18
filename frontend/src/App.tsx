@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
+import About from './components/About/About';
 import './App.css';
 
 function App() {
@@ -9,9 +10,7 @@ function App() {
 
       <Hero />
 
-      <section className="about">
-        <p></p>
-      </section>
+      <About />
     </>
   );
 }
