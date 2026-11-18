@@ -51,22 +51,3 @@
   display: flex;
   gap: 1rem;
 }
-
-.highlight {
-  color: var(--accent);
-  font-family: var(--font-accent);
-
-  position: relative;
-  display: inline-block;
-}
-
-.highlight::after {
-  content: '';
-  position: absolute;
-  left: -3%;
-  bottom: -0.28em;
-  width: 98%;
-  height: 0.45em;
-  background-color: var(--accent);
-  mask: url('../../assets/underline.svg') no-repeat;
-}

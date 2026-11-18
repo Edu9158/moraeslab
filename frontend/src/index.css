@@ -44,3 +44,25 @@ body {
   background-color: var(--primary);
   margin: 0;
 }
+
+/* ---------- Shared Utilities ---------- */
+
+/* Pink handwritten word with brush underline (used in Hero and About titles) */
+.highlight {
+  color: var(--accent);
+  font-family: var(--font-accent);
+
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  left: -3%;
+  bottom: -0.28em;
+  width: 98%;
+  height: 0.45em;
+  background-color: var(--accent);
+  mask: url('./assets/underline.svg') no-repeat;
+}

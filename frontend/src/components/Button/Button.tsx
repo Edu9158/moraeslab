@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import './Button.css';
 
 type ButtonProps = {
-  variant: 'primary' | 'secondary';
+  variant: 'primary' | 'secondary' | 'secondary-light';
   children: ReactNode;
   href: string;
 };
