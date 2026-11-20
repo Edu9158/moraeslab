@@ -6,7 +6,7 @@
   background-color: var(--background);
 
   min-height: 75vh;
-  padding-block: 4rem;
+  padding-block: 6rem;
   padding-inline: var(--page-gutter);
 }
 
@@ -41,10 +41,8 @@
   margin-bottom: 2rem;
 }
 
-.hero-img img {
-  width: 100%;
+.hero-img .logo {
   max-width: 500px;
-  height: auto;
 }
 
 .hero-buttons {

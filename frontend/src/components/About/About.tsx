@@ -1,6 +1,7 @@
 import './About.css';
 import picture from '../../assets/picture.webp';
 import Button from '../Button/Button';
+import Reveal from '../Reveal/Reveal';
 
 const TECHS = [
   'React',
@@ -14,13 +15,15 @@ const TECHS = [
 function About() {
   return (
     <section id="about" className="about">
-      <p className="about-eyebrow">about me</p>
-      <h2 className="about-title">
-        Curious by training, <span className="highlight">builder</span> by
-        choice.
-      </h2>
+      <Reveal direction="left">
+        <p className="about-eyebrow">about me</p>
+        <h2 className="about-title">
+          Curious by training, <span className="highlight">builder</span> by
+          choice.
+        </h2>
+      </Reveal>
 
-      <div className="about-grid">
+      <Reveal className="about-grid">
         <div className="about-card about-card--photo">
           <img src={picture} alt="Portrait of Eduardo" />
         </div>
@@ -65,7 +68,7 @@ function About() {
             played in a few bands, and music is still how I recharge.
           </p>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

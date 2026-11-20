@@ -1,11 +1,11 @@
-import logo from '../../assets/logo.svg';
 import './Hero.css';
 import Button from '../Button/Button';
+import Logo from '../Logo/Logo';
 
 function Hero() {
   return (
     <section className="hero">
-      <div className="hero-content">
+      <div className="hero-content fade-out-on-scroll">
         <p className="hero-eyebrow">PHYSICS · SOFTWARE · EXPERIMENTS</p>
 
         <h1 className="hero-title">
@@ -28,8 +28,8 @@ function Hero() {
         </div>
       </div>
 
-      <div className="hero-img">
-        <img src={logo} alt="MoraesLab Logo" />
+      <div className="hero-img fade-out-on-scroll">
+        <Logo />
       </div>
     </section>
   );

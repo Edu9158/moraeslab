@@ -7,7 +7,7 @@
   --background-hover: #aca495;
   --primary: #214435; /* 30% - Green */
   --primary-hover: #1a362e;
-  --accent: #ff3ea5; /* 10% - Pink */
+  --accent: #ff3e3e; /* 10% - Pink */
 
   --page-gutter: max(clamp(2rem, 5vw, 4rem), calc((100% - 1200px) / 2));
   --font-body: 'Inter', sans-serif;
@@ -47,7 +47,6 @@ body {
 
 /* ---------- Shared Utilities ---------- */
 
-/* Pink handwritten word with brush underline (used in Hero and About titles) */
 .highlight {
   color: var(--accent);
   font-family: var(--font-accent);
@@ -65,4 +64,88 @@ body {
   height: 0.45em;
   background-color: var(--accent);
   mask: url('./assets/underline.svg') no-repeat;
+}
+
+/* ---------- Reveal on scroll ---------- */
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes reveal-left {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+}
+
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: reveal-up linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+
+  .reveal--left {
+    animation-name: reveal-left;
+  }
+
+  .fade-out-on-scroll {
+    animation: fade-out linear both;
+    animation-timeline: view();
+    animation-range: exit -10% exit 100%;
+  }
+}
+
+@supports not (animation-timeline: view()) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(80px);
+
+    transition:
+      opacity 1s ease,
+      transform 1s ease;
+  }
+
+  .reveal--left {
+    transform: translateX(-80px);
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .fade-out-on-scroll {
+    opacity: 1;
+    transform: none;
+
+    animation: none;
+    transition: none;
+  }
 }

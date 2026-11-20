@@ -1,0 +1,33 @@
+.logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Green: background arch */
+.logo-bg {
+  fill: var(--primary);
+}
+
+/* Cream: stars and sparkles */
+.logo-fill {
+  fill: var(--background);
+}
+
+/* Cream outlines: flask neck line and smoke */
+.logo-line {
+  fill: none;
+  stroke: var(--background);
+}
+
+/* Flask: green inside (hides the ring behind it), cream outline */
+.logo-flask {
+  fill: var(--primary);
+  stroke: var(--background);
+}
+
+/* Accent: orbital ring */
+.logo-ring {
+  fill: none;
+  stroke: var(--accent);
+}

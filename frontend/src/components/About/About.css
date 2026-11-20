@@ -62,8 +62,6 @@
 .about-card--photo {
   grid-area: photo;
 
-  /* The image is taken out of the layout flow, so the text cards
-     (not the photo's pixel size) decide the row heights. */
   position: relative;
   min-height: 22rem;
   overflow: hidden;
