@@ -3,11 +3,12 @@
 /* ---------- Root Variables ---------- */
 
 :root {
-  --background: #f4ead5; /* 60% - Cream */
-  --background-hover: #aca495;
-  --primary: #214435; /* 30% - Green */
-  --primary-hover: #1a362e;
-  --accent: #ff3e3e; /* 10% - Pink */
+  --background: #eef3f1; /* 60% - Ice */
+  --primary: #0b2027; /* 30% - Polar night */
+  --accent: #d1356b; /* 10% - Aurora pink */
+
+  --background-hover: color-mix(in srgb, var(--background) 85%, black);
+  --primary-hover: color-mix(in srgb, var(--primary) 80%, white);
 
   --page-gutter: max(clamp(2rem, 5vw, 4rem), calc((100% - 1200px) / 2));
   --font-body: 'Inter', sans-serif;

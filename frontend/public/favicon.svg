@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <!-- Simplified MoraesLab mark: flask + orbital ring, readable at 16px -->
-  <circle cx="32" cy="32" r="32" fill="#F4EAD5"/>
+  <circle cx="32" cy="32" r="32" fill="#EEF3F1"/>
 
   <!-- Ring: back half (faded) -->
   <ellipse cx="32" cy="42" rx="25" ry="7" transform="rotate(-14 32 42)"
-           fill="none" stroke="#FF3EA5" stroke-width="3.5" opacity=".55"/>
+           fill="none" stroke="#D1356B" stroke-width="3.5" opacity=".55"/>
 
   <!-- Flask (filled with background color to hide the ring behind it) -->
   <path d="M26,13 V27 L15,46 Q12.5,52 18,52 H46 Q51.5,52 49,46 L38,27 V13"
-        fill="#F4EAD5" stroke="#214435" stroke-width="4.5"
+        fill="#EEF3F1" stroke="#0B2027" stroke-width="4.5"
         stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M22,13 H42" stroke="#214435" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M22,13 H42" stroke="#0B2027" stroke-width="4.5" stroke-linecap="round"/>
 
   <!-- Ring: front half -->
   <path d="M7,42 A25,7 0 0 0 57,42" transform="rotate(-14 32 42)"
-        fill="none" stroke="#FF3EA5" stroke-width="3.5" stroke-linecap="round"/>
+        fill="none" stroke="#D1356B" stroke-width="3.5" stroke-linecap="round"/>
 </svg>
